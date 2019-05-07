@@ -6,11 +6,18 @@
   <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}">
 </head>
 <body>
+  <iframe
+  width="450"
+  height="250"
+  frameborder="0" style="border:0"
+  src="https://www.google.com/maps/embed/v1/search?key=AIzaSyBCs4QRudRZGkes1mI0rMh7OaPrteJnsLA&q=record+stores+in+Seattle" allowfullscreen>
+</iframe>
   <div class="wrapper">
     <header>
       <h1><a href="{{ "/" | relURL }}">{{ .Site.Title }}</a></h1>
       <p class="description">{{ .Site.Params.description }}</p>
     </header>
+
 
     <div class="page">
       {{ block "main" . }}{{ end }}
